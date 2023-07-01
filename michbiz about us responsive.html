@@ -1,0 +1,766 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>michbiz about us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    .topnav {
+      overflow: hidden;
+      background-color:white;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav img{
+        padding: none;
+    }
+    .header {
+  background-color:#09a1b9;
+  padding: 33px;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  width: 100%;
+    }
+.header-left{
+  float: left;
+  font-size: 17px;
+  text-align: center;
+  margin-top: -15px;
+}
+.header-middle{
+  float: left;
+  margin-left: 410px;
+  font-size: 17px;
+  text-align: center;
+  margin-top: -15px;
+}
+.header-right{
+  float: right;
+  margin-left: 100px;
+  align-items: center;
+  color: black;
+  margin-top: -25px;
+  margin-right: 40px;
+}
+.header-right i.fa {
+  display: inline-block;
+  border-radius: 40px;
+  box-shadow: 0 0 2px #888;
+  padding:10px 10px;
+  background-color: rgba(230, 161, 12, 0.952);
+}
+   .header-down{
+    margin-top: 20px;
+   }
+    .topnav .icon {
+      display: none;
+    }
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    .dropdown .dropbtn {
+      font-size: 17px;
+      border: none;
+      outline: none;
+      color: black;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    .dropdown-content {
+      display: none;
+      position: fixed;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    #bh:hover{
+      background-color: #b92309;
+      color: white;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #074b4b;
+      color: white;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child),
+      .dropdown .dropbtn {
+        display: none;
+      }
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+      .topnav{
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      /* .topnav.responsive {
+        position: relative;
+    } */
+      .topnav.responsive .icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .topnav.responsive .dropdown {
+        float: none;
+      }
+      .topnav.responsive .dropdown-content {
+        position: relative;
+      }
+      .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    #bh{
+        padding: none;
+    }
+    .header-middle{
+        margin-left: 10px;
+    }
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    .sticky+body {
+      padding-top: 60px;
+    }
+    #bh{
+        background-color: #09a1b9;
+        border: none;
+        padding: 10px 20px;
+    }
+
+
+
+
+    .block1{
+    background-color: #00b3b3;
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    width: 40%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+/*block1 completed*/
+.block11-top{
+  width: 100%;
+  float: left;
+  background-color: #074b4b;
+  color: white;
+}
+.block11-items{
+  width: 30%;
+  float: left;
+  margin-left: 10px;
+  list-style-type: none;
+}
+li:hover{
+  color:  #00b3b3;
+}
+
+hr{
+  width: 90%;
+}
+
+.icons hr{
+width: 20%;
+float: left;
+margin-left: 3px;
+margin-top: 15px;
+}
+.icons img{
+  float: left;
+  margin-left: 15px;
+}
+/* footer is completed */
+.block-0{
+    margin-top: 100px;
+    text-align: center;
+    width: 40%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.block2{
+    text-align: center;
+    width: 40%;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+}
+.block3-top{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    float: left;
+    
+}
+.block3-down1{
+    width: 100%;
+    margin-top: 20px;
+    float: left;
+}
+.block3-card1{
+    float: left;
+}
+.block3-2 {
+    margin-left: 14px;
+    margin-top:30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.block3-1{
+    margin-left: 14px;
+    margin-top: 60px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.block3-3{
+    margin-left: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.block4-top{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 40px;
+    float: left;
+    background-color: #00b3b3;
+    color: white;
+    margin-bottom: 40px;
+}
+.block4-1{
+    width: 50%;
+    float: left;
+}
+.block4-2{
+    width: 50%;
+    float: left;
+}
+.block4-2 p{
+    float: left;
+    margin-right:80px;
+}
+.block5{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.block5 #act{
+    text-align: center;
+}
+.block6{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+.card1{
+    float: left;
+    width: 20%;
+    
+}
+@media screen and (max-width: 700px) {
+    .block1{
+        width: 90%;
+        float: none;
+        margin: 0;
+    }
+    .block2{
+        width: 90%;
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+    img{
+        width: 90%;
+        float: none;
+        margin: none;
+    }
+    .block3-1{
+        width: 100%;
+        float: none;
+    }
+    .block3-2{
+        width: 100%;
+        float: none;
+    }
+    .block3-3{
+        width: 100%;
+        float: none;
+    }
+    .block4-1{
+        width: 100%;
+        float: left;
+        
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .block4-2{
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+    .block4-2 p{
+        text-align: center;
+        margin: 0;
+    }
+    .card1{
+        width: 100%;
+    }
+    .block11-items{
+        width: 100%;
+        float: left;
+    }
+}
+
+
+.form-top{
+            width: 70%;
+            float: left;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            top: 0;
+            margin-top: 180px;
+            position: absolute;
+            z-index: 99;
+            background-color: whitesmoke;
+            opacity: 1;
+            position: fixed;
+            margin-left: 100px;
+        }
+        .form-1{
+            width: 70%;
+            float: left;
+        }
+        
+        .form-1 #te{
+            width: 500px;
+            height: 40px;
+            
+            border: none;
+        }
+        .form-2{
+            width: 30%;
+            float: left;
+        }
+        #cross1{
+    position: absolute;
+    color: #fff;
+    opacity: 1;
+    top: 5px;
+    right: 0%;
+    padding:0px 5px 5px 5px;
+    text-shadow: none;
+    font-weight: 400;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #222;
+    border-radius: 50%;
+    z-index: 99;
+        }
+
+
+
+        .form-top1{
+          width: 70%;
+            float: left;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            top: 0;
+            margin-top: 100px;
+            position: absolute;
+            z-index: 99;
+            background-color: whitesmoke;
+            opacity: 1;
+            position: fixed;
+            margin-left: 100px;
+        }
+        .form-1 #tex{
+            width: 500px;
+            height: 30px;
+        }
+        .form-1 a{
+            text-decoration: none;
+            
+        }
+        .form-1 #te{
+            width: 500px;
+            height: 40px;
+            background-color: rgba(13, 167, 206, 0.959);
+            border: none;
+        }
+        .form-1 button{
+            width: 500px;
+            height: 40px;
+        }
+        .form-2{
+            width: 30%;
+            float: left;
+        }
+        #cross{
+    position: absolute;
+    color: #fff;
+    opacity: 1;
+    top: 5px;
+    right: 0%;
+    padding:0px 5px 5px 5px;
+    text-shadow: none;
+    font-weight: 400;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #222;
+    border-radius: 50%;
+    z-index: 99;
+        }
+  </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+          <i class="fa fa-envelope"></i>
+          info@michbiz.net
+        </div>
+        <div class="header-middle">
+          Call : +91 12345 67890
+        </div>
+        <div class="header-right">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-telegram"></i>
+        </div>
+      </div>
+  <div class="topnav" id="myTopnav">
+    <a href=""><img src="images/logo.png" width="100px" height="90px" alt="" id="logo"></a>
+    <div class="header-down">
+    <a href="#home" class="active" >Home</a>
+    <div class="dropdown" >
+      <button class="dropbtn">
+                    Pet services
+                </button>
+      <div class="dropdown-content">
+        <a href="#">Pet Boarding</a>
+        <a href="#">Doggy Care</a>
+        <a href="#">Pet Grooming</a>
+        <a href="#">Dog Walking</a>
+        <a href="#">Dog Training</a>
+        <a href="#">Vet Consultant</a>
+      </div>
+    </div>
+    <div class="dropdown" >
+        <button class="dropbtn">
+                      Deal Shop
+                  </button>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/food%20and%20nutrition%20final%20.html">Food & Nutrition</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/gromming%20final.html">Grooming & Wellness</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/dog%20bedding%20final.html">Dog Bedding & Clothing</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/pet%20art%20final.html">Pet Art</a>
+        </div>
+      </div>
+      <div class="dropdown" >
+        <button class="dropbtn">
+                      Partner Sigup
+                  </button>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/snouters%20host.html">Become a Snouters Host</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/dog%20walker.html">Become a Dog Walker</a>
+        </div>
+      </div>
+      <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20blog%20responsive.html" >Blogs</a>
+      <div class="dropdown" >
+        <button class="dropbtn" style="margin-top: -10px;">
+                    <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20about%20us%20responsive.html"> About us </a>
+                  </button>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20meet%20our%20team%20responsive.html">Meet Our Team</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20contact%20us%20responsive.html">Contact</a>
+        </div>
+      </div>
+      <a href="#" onclick="showForm1()" style="float:left">Login</a>
+      <a href="#" onclick="showForm()" style="float:left">Signup</a>
+      <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/become%20host.html" ><button id="bh">Become Host</button></a>
+    <a href="javascript:void(0);" style="font-size: 15px" class="icon" onclick="reactiveTopNav()">&#9776;</a>
+        </div>
+        </div>
+
+
+
+        <div class="block1">
+            <h2>
+                About us
+            </h2>
+          </div>
+          <div class="block2">
+            <p>
+                We believe everyone deserves the unconditional love of a pet and at Snouters, our mission is to make it easier to experience that love. Our mission is to simplify all aspects of being a pet parent.
+            </p>
+          </div>
+          <div class="block3-top">
+            <div class="block3-down1">
+                <div class="block3-card1">
+                    <div class="block3-1">
+                        <img src="images/dw-1jpg" width="200px"  alt="">
+                    </div>
+                </div>
+                <div class="block3-card1">
+                    <div class="block3-2">
+                        <img src="images/dw-2.jpg" width="200px"  alt="">
+                    </div>
+                </div>
+                <div class="block3-card1">
+                    <div class="block3-3">
+                        <img src="images/dw-3.jpg" width="200px"  alt="">
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="block4-top">
+            <div class="block4-cover">
+            <div class="block4-1">
+                <img src="images/dog care.jpg" width="200px" alt="">
+            </div>
+            <div class="block4-2">
+                <h2>Tech Driven</h2>
+                <p>
+                    Snouters is a technology platform that supports pet boarding, dog walking, veterinary care, and dog training services across India. We empower our community of trusted pet boarders, groomers and walkers to run their own pet care businesses on Snouters by providing them with the right tools.
+                </p>
+            </div>
+        </div>
+          </div>
+          <div class="block5">
+            <h2 id="act">People who love pets</h2>
+            <p>
+                Whether you need a dog walker for the day, overnight pet boarding for a month, or dog day care, there’s a Snouter who’s the perfect match for you, your pets, and your lifestyle.
+            </p>
+        </div>
+        <div class="block6">
+            <h2 id="act">Services that we offer</h2>
+            <div class="cards">
+                <div class="card1">
+                    <img src="images/dog boarding.jpg" width="100px" alt="">
+                    <p>dog boarding</p>
+                </div>
+                <div class="card1">
+                    <img src="images/dog walking.jpg" width="100px" alt="">
+                    <p>dog walking</p>
+                </div>
+                <div class="card1">
+                    <img src="images/dog daycare.png" width="100px" alt="">
+                    <p>dog day care</p>
+                </div>
+                <div class="card1">
+                    <img src="images/dog grooming.png" width="100px" alt="">
+                    <p>dog grooming</p>
+                </div>
+    
+            </div>
+        </div>
+          
+          <footer>
+            <div class="block11-top">
+              <div class="block11-items">
+                <h3 id="act">MICHBIZ</h3><br>
+                <p>MICHBIZ is India’s largest network of 5-star pet home stays. Snouters connects pet parents with loving pet care providers who offer overnight services, including boarding and in-home pet sitting, as well as daytime services, including doggy daycare, dog walking, drop-in visits, and grooming.</p><br>
+                <P id="act">Connect with us:</P>
+              </div>
+              <div class="block11-items">
+                <h4 id="act">Important Links</h4><br>
+                <li>The MICHBIZ Guarantee</li><br>
+                <li>Cancellation Policy</li><br>
+                <li>Reservation Protection</li><br>
+                <li>MICHBIZ Host Resources</li><br>
+                <li>FAQ</li><br>
+                <li>Contact us</li><br>
+                <li>Help</li><br>
+              </div>
+              <div class="block11-items">
+                <h4 id="act">Apply</h4>
+                <li>Become a MICHBIZ Host</li><br>
+                <li>Become a Dog Walker</li><br>
+                <li>Become a Pet Groomer</li><br>
+              </div>
+              <hr>
+              <p>© 2015-22 Meesho Inc. All Rights Reserved.</p>
+            </div>
+           </footer>
+
+
+           <div class="form-top" id="formElement1" style="display: none;">
+            <div class="form-1">
+                <form method="" action="" name="reg_form" >    
+                    <h2>Log in to your account</h2>    
+                    <table>    
+                        <tr>    
+                            <td>    
+                                <input type="text" name="UserName" required placeholder="UserName"id="tex" >    
+                            </td>    
+                        </tr> 
+                        <tr>       
+                            <td>    
+                                <input type="password" name="email" required placeholder="password" id="tex">    
+                            </td>    
+                        </tr>   
+                        <tr>    
+                            <td>    
+                                <input type="submit" name="submit" value="Login" id="te"><br><br>  
+                                <input type="reset" name="reset" value="Don't have an account?" id="te"><br><br> 
+                                <input type="reset" name="reset" value="Forgot Password"id="te"> 
+                                <button type="button" id="cross1" class="btn cancel" onclick="closeForm()">X</button>   
+                            </td>    
+                        </tr>             
+                    </table>    
+                </form>  
+            </div>
+            <div class="form-2">
+                <img src="images/singnup.jpg" width="300px"height="400px" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="form-top1" id="formElement" style="display: none;">
+          <div class="form-1">
+              <form method="" action="" name="reg_form" >    
+                  <h2>Create an account</h2>    
+                  <table>    
+                      <tr>    
+                          <td>    
+                              <input type="text" name="UserName" required placeholder="UserName" id="tex">    
+                          </td>    
+                      </tr> 
+                      <tr>      
+                          <td>    
+                              <input type="Email" size="50" required name="address" placeholder="Email" id="tex">    
+                          </td>    
+                      </tr>    
+                      <tr>       
+                          <td>    
+                              <input type="password" name="email" required placeholder="password" id="tex">    
+                          </td>    
+                      </tr>   
+                      <tr>
+                          <td>    
+                              <input type="password" name="email" required placeholder="Retype password" id="tex">    
+                          </td>
+                      </tr> 
+                      <tr>    
+                          <td>    
+                              <input type="number" required name="mobile" placeholder="phone" id="tex">    
+                          </td>    
+                      </tr>  
+                      <tr>
+                          <td>
+                              <input type="radio">
+                              I only want to book
+                          </td>
+                      </tr>   
+                      <tr>
+                          <td>
+                              <input type="radio">
+                              I want to be a Host
+                          </td>
+                      </tr>   
+                      <tr>
+                          <td>
+                              <input type="checkbox">
+                              I agree with <a href="#">terms & conditions</a>
+                          </td>
+                      </tr>
+                      <tr>    
+                          <td>    
+                              <input type="submit" name="submit" value="Create acount" id="te"><br><br>   
+                              <button type="button" id="cross" class="btn cancel" onclick="closeForm1()">X</button>   
+                          </td>    
+                      </tr> 
+                      <tr>
+                          <td>
+                              <a href="#">Already a member? Log in</a>
+                          </td>
+                      </tr>  
+                               
+                  </table>    
+              </form>  
+          </div>
+          <div class="form-2">
+              <img src="images/singnup.jpg" width="300px"height="400px" alt="">
+          </div>
+      </div>
+        <script>
+            function reactiveTopNav() {
+                const topNav = document.getElementById("myTopnav");
+
+                topNav.classList.contains("responsive")
+                    ? topNav.classList.remove("responsive")
+                    : topNav.classList.add("responsive");
+            }
+            window.onscroll = function () {
+                stickyTopNav();
+            };
+
+            var navbar = document.getElementById("myTopnav");
+            var sticky = navbar.offsetTop;
+
+            function stickyTopNav() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+
+            function showForm1() {
+        document.getElementById('formElement1').style.display = 'block';
+    }
+    function closeForm(){
+            document.getElementById("formElement1").style.display="none";
+        }
+
+
+        function showForm() {
+        document.getElementById('formElement').style.display = 'block';
+    }
+    function closeForm1(){
+            document.getElementById("formElement").style.display="none";
+        }
+        </script>
+        
+    </body>
+</html>

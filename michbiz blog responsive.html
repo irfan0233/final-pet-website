@@ -1,0 +1,826 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>michbiz header</title>
+  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <style>
+    .topnav {
+      overflow: hidden;
+      background-color:white;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav img{
+        padding: none;
+    }
+    .header {
+  background-color:#09a1b9;
+  padding: 33px;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  width: 100%;
+    }
+.header-left{
+  float: left;
+  font-size: 17px;
+  text-align: center;
+  margin-top: -15px;
+}
+.header-middle{
+  float: left;
+  margin-left: 410px;
+  font-size: 17px;
+  text-align: center;
+  margin-top: -15px;
+}
+.header-right{
+  float: right;
+  margin-left: 100px;
+  align-items: center;
+  color: black;
+  margin-top: -25px;
+  margin-right: 40px;
+}
+.header-right i.fa {
+  display: inline-block;
+  border-radius: 40px;
+  box-shadow: 0 0 2px #888;
+  padding:10px 10px;
+  background-color: rgba(230, 161, 12, 0.952);
+}
+   .header-down{
+    margin-top: 20px;
+   }
+    .topnav .icon {
+      display: none;
+    }
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    .dropdown .dropbtn {
+      font-size: 17px;
+      border: none;
+      outline: none;
+      color: black;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+      
+    }
+    .dropdown-content {
+      display: none;
+      position: fixed;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    .dropdown-content a:hover {
+      background-color: #074b4b;
+      color: white;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child),
+      .dropdown .dropbtn {
+        display: none;
+      }
+      .topnav a.icon {
+        float: right;
+        display: block;
+      }
+      .topnav{
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      /* .topnav.responsive {
+        position: relative;
+    } */
+      .topnav.responsive .icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .topnav.responsive .dropdown {
+        float: none;
+      }
+      .topnav.responsive .dropdown-content {
+        position: relative;
+      }
+      .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    #bh{
+        padding: none;
+    }
+    .header-middle{
+        margin-left: 10px;
+    }
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    .sticky+body {
+      padding-top: 60px;
+    }
+    #bh{
+        background-color: #09a1b9;
+        border: none;
+        padding: 10px 20px;
+    }
+    #bh:hover{
+      background-color: #b92309;
+      color: white;
+    }
+
+
+
+
+
+    .block1{
+    background-color: #00b3b3;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+/*block1 completed*/
+.block2-top{
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 5%;
+    width: 80%;
+}
+.block2-down1-card{
+    float: left;
+    margin-left: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 80px;
+    text-align: center;
+}
+/*block2 completed*/
+.block3-top{
+  margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 5%;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+}
+.block3-down1-card{
+    float: left;
+    margin-left: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 80px;
+    width: 28%;
+    text-align: center;
+}
+/* block2 is completed */
+.block11-top{
+  width: 100%;
+  float: left;
+  background-color: #074b4b;
+  color: white;
+}
+.block11-items{
+  width: 30%;
+  float: left;
+  margin-left: 10px;
+  list-style-type: none;
+}
+li:hover{
+  color:  #00b3b3;
+}
+hr{
+  width: 90%;
+}
+
+.icons hr{
+width: 20%;
+float: left;
+margin-left: 3px;
+margin-top: 15px;
+}
+.icons img{
+  float: left;
+  margin-left: 15px;
+}
+/* footer is completed */
+.pagination {
+  display: inline-block;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+/* next page numbers is completed */
+@media screen and (max-width: 600px) {
+    .block2-top{
+        width: 90%;
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+    .block2-down1-card{
+        width: 100%;
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+    .block2-down1-card img{
+        width: 90%;
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+    .block3-down1-card{
+        width: 100%;
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+
+
+
+.form-top{
+            width: 70%;
+            float: left;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            top: 0;
+            margin-top: 180px;
+            position: absolute;
+            z-index: 99;
+            background-color: whitesmoke;
+            opacity: 1;
+            position: fixed;
+            margin-left: 100px;
+        }
+        .form-1{
+            width: 70%;
+            float: left;
+        }
+        
+        .form-1 #te{
+            width: 500px;
+            height: 40px;
+            
+            border: none;
+        }
+        .form-2{
+            width: 30%;
+            float: left;
+        }
+        #cross1{
+    position: absolute;
+    color: #fff;
+    opacity: 1;
+    top: 5px;
+    right: 0%;
+    padding:0px 5px 5px 5px;
+    text-shadow: none;
+    font-weight: 400;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #222;
+    border-radius: 50%;
+    z-index: 99;
+        }
+
+
+
+        .form-top1{
+          width: 70%;
+            float: left;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            top: 0;
+            margin-top: 100px;
+            position: absolute;
+            z-index: 99;
+            background-color: whitesmoke;
+            opacity: 1;
+            position: fixed;
+            margin-left: 100px;
+        }
+        .form-1 #tex{
+            width: 500px;
+            height: 30px;
+        }
+        .form-1 a{
+            text-decoration: none;
+            
+        }
+        .form-1 #te{
+            width: 500px;
+            height: 40px;
+            background-color: rgba(13, 167, 206, 0.959);
+            border: none;
+        }
+        .form-1 button{
+            width: 500px;
+            height: 40px;
+        }
+        .form-2{
+            width: 30%;
+            float: left;
+        }
+        #cross{
+    position: absolute;
+    color: #fff;
+    opacity: 1;
+    top: 5px;
+    right: 0%;
+    padding:0px 5px 5px 5px;
+    text-shadow: none;
+    font-weight: 400;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #222;
+    border-radius: 50%;
+    z-index: 99;
+        }
+        #searchbar{
+	margin-left: 15%;
+	padding:15px;
+	border-radius: 10px;
+}
+
+input[type=text] {
+	width: 30%;
+	-webkit-transition: width 0.15s ease-in-out;
+	transition: width 0.15s ease-in-out;
+}
+
+/* When the input field gets focus,
+		change its width to 100% */
+input[type=text]:focus {
+	width: 70%;
+}
+
+#list{
+	font-size: 1.5em;
+	margin-left: 90px;
+}
+
+.animals{
+  display: list-item;	 
+}
+
+a{
+  text-decoration: none;
+}
+  </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+          <i class="fa fa-envelope"></i>
+          info@michbiz.net
+        </div>
+        <div class="header-middle">
+          <i class="fa fa-phone"></i>
+          +91 9652603547
+        </div>
+        <div class="header-right">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-telegram"></i>
+        </div>
+      </div>
+  <div class="topnav" id="myTopnav">
+    <a href=""><img src="images/logo.png" width="100px" height="90px" alt="" id="logo"></a>
+    <div class="header-down">
+    <a href="#home" class="active" >Home</a>
+    <div class="dropdown" >
+      <button class="dropbtn">
+                    Pet services
+                </button>
+      <div class="dropdown-content">
+        <a href="#">Pet Boarding</a>
+        <a href="#">Doggy Care</a>
+        <a href="#">Pet Grooming</a>
+        <a href="#">Dog Walking</a>
+        <a href="#">Dog Training</a>
+        <a href="#">Vet Consultant</a>
+      </div>
+    </div>
+    <div class="dropdown" >
+        <button class="dropbtn">
+                      Deal Shop
+                  </button>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/food%20and%20nutrition%20final%20.html">Food & Nutrition</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/gromming%20final.html">Grooming & Wellness</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/dog%20bedding%20final.html">Dog Bedding & Clothing</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/pet%20art%20final.html">Pet Art</a>
+        </div>
+      </div>
+      <div class="dropdown" >
+        <button class="dropbtn">
+                      Partner Sigup
+                  </button>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/snouters%20host.html">Become a Snouters Host</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/dog%20walker.html">Become a Dog Walker</a>
+        </div>
+      </div>
+      <a href="#" >Blogs</a>
+      <div class="dropdown" >
+        <button class="dropbtn" style="margin-top: -10px;">
+                     <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20about%20us%20responsive.html" > About us</a>
+                  </button>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20meet%20our%20team%20responsive.html">Meet Our Team</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20contact%20us%20responsive.html">Contact</a>
+        </div>
+      </div>
+      <a href="#" onclick="showForm1()" style="float:left">Login</a>
+      <a href="#" onclick="showForm()" style="float:left">Signup</a>
+      <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/become%20host.html" ><button id="bh">Become Host</button></a>
+      <input id="searchbar" onkeyup="search_animal()" type="text"
+		name="search" placeholder="Search animals..">
+    <a href="javascript:void(0);" style="font-size: 15px" class="icon" onclick="reactiveTopNav()">&#9776;</a>
+        </div>
+        </div>
+
+
+
+
+
+        <ol id='list' style="display:none; position: fixed; margin: 20px 320px;list-style: none; color: black;margin-top: 20px;background-color: #f9f9f9;width:100%; text-transform: none;"  >
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/food%20and%20nutrition%20final%20.html"><li class="animals">Food & Nutrition</li></a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/gromming%20final.html"><li class="animals">Grooming & Wellness</li></a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/dog%20bedding%20final.html"><li class="animals">Dog Bedding & Clothing</li></a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/snouters%20host.html"><li class="animals">Become a Snouters Host</li></a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/dog%20walker.html"> <li class="animals">Become a Dog Walker</li></a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20about%20us%20responsive.html" > <li class="animals">About us</li> </a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20meet%20our%20team%20responsive.html"> <li class="animals">Meet Our Team</li></a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20contact%20us%20responsive.html"> <li class="animals">Contact</li></a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/pet%20art%20final.html"><li class="animals">Pet Art</li></a>
+          <li class="animals">Dog</li>
+          <li class="animals">Elephant</li>
+          <li class="animals">Fish</li>
+          <li class="animals">Gorilla</li>
+          <li class="animals">Monkey</li>
+          <li class="animals">Turtle</li>
+          <li class="animals">Whale</li>
+          <li class="animals">Aligator</li>
+          <li class="animals">Donkey</li>
+          <li class="animals">Horse</li>
+        </ol>
+
+
+
+
+
+
+
+
+
+
+        <div class="block1">
+            <h2>
+                Blog
+            </h2>
+          </div>
+          <div class="block2-top">
+            <div class="block2-down1">
+                <div class="block2-down1-card">
+                    <img src="images/blog1.jpg" width="200px" alt="">
+                    <p>Pet Care</p>
+                </div>
+                <div class="block2-down1-card">
+                    <img src="images/blog2.jpg" width="200px" height="300px" alt="">
+                    <p>Pet Health</p>
+                </div>
+                <div class="block2-down1-card">
+                    <img src="images/blog3.jpg" width="250px" height="300px" alt="">
+                    <p>Dog Training</p>
+                </div>
+                <div class="block2-down1-card">
+                    <img src="images/blog4.jpg" width="200px"height="300px" alt="">
+                    <p>Dog Places</p>
+                </div>
+            </div>
+          </div>
+    
+          <div class="block3-top">
+            <div class="block3-down1">
+                <div class="block3-down1-card">
+                    <img src="images/blog5.jpg" width="100%"height="300px" alt="">
+                    <p>Healthy Dog Breeds: 5 Dynamic Dogs</p>
+                </div>
+                <div class="block3-down1-card">
+                    <img src="images/blog6.jpg" width="100%" height="300px" alt="">
+                    <p>5 Brain Games for Dogs</p>
+                </div>
+                <div class="block3-down1-card">
+                    <img src="images/blog7.jpg" width="100%"height="300px" alt="">
+                    <p>Cat Owners Newsletter: 14 Exciting Cat Facts</p>
+                </div>
+            </div>
+          </div>
+    
+          <div class="block3-top">
+            <div class="block3-down1">
+                <div class="block3-down1-card">
+                    <img src="images/blog8.jpg" width="100%"height="300px" alt="">
+                    <p>3 Easy Tips For Keeping You And Your Dog Happy.</p>
+                </div>
+                <div class="block3-down1-card">
+                    <img src="images/blog9.jpg" width="100%" height="300px" alt="">
+                    <p>Crate train dog in 9 Brilliant steps</p>
+                </div>
+                <div class="block3-down1-card">
+                    <img src="images/blog10.jpg" width="100%"height="300px" alt="">
+                    <p>Training and Socializing Your Dog: 6 adorable ways</p>
+                </div>
+            </div>
+          </div>
+    
+          <div class="block3-top">
+            <div class="block3-down1">
+                <div class="block3-down1-card">
+                    <img src="images/blog11.jpg" width="100%"height="300px" alt="">
+                    <p>2 Importance of Safe Mental and Physical Simulation for Dogs</p>
+                </div>
+                <div class="block3-down1-card">
+                    <img src="images/blog12.jpg" width="100%" height="300px" alt="">
+                    <p>Adopt dog: 10 incredible reasons to rescue a dog</p>
+                </div>
+                <div class="block3-down1-card">
+                    <img src="images/blog13.jpg" width="100%"height="300px" alt="">
+                    <p>Dog owners guide to 10 unique and exciting Pup facts</p>
+                </div>
+            </div>
+          </div>
+    
+          <div class="block3-top">
+            <div class="block3-down1">
+                <div class="block3-down1-card">
+                    <img src="images/healthy dogs.jpg" width="100%"height="300px" alt="">
+                    <p>3 Love Stories Of Animals And Pet Tales Of Friendship</p>
+                </div>
+                <div class="block3-down1-card">
+                    <img src="images/healthy dogs1.jpg" width="100%" height="300px" alt="">
+                    <p>8 Herbs For Natural Dog Treatments</p>
+                </div>
+                <div class="block3-down1-card">
+                    <img src="images/dog training.jpg" width="100%"height="300px" alt="">
+                    <p>4 Pet Friendly Hotels in Mumbai</p>
+                </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+          <footer>
+            <div class="block11-top">
+              <div class="block11-items">
+                <h3 id="act">MICHBIZ</h3><br>
+                <p>MICHBIZ is India’s largest network of 5-star pet home stays. Snouters connects pet parents with loving pet care providers who offer overnight services, including boarding and in-home pet sitting, as well as daytime services, including doggy daycare, dog walking, drop-in visits, and grooming.</p><br>
+                <P id="act">Connect with us:</P>
+              </div>
+              <div class="block11-items">
+                <h4 id="act">Important Links</h4><br>
+                <li>The MICHBIZ Guarantee</li><br>
+                <li>Cancellation Policy</li><br>
+                <li>Reservation Protection</li><br>
+                <li>MICHBIZ Host Resources</li><br>
+                <li>FAQ</li><br>
+                <li>Contact us</li><br>
+                <li>Help</li><br>
+              </div>
+              <div class="block11-items">
+                <h4 id="act">Apply</h4>
+                <li>Become a MICHBIZ Host</li><br>
+                <li>Become a Dog Walker</li><br>
+                <li>Become a Pet Groomer</li><br>
+              </div>
+              <hr>
+              <p>© 2015-22 Meesho Inc. All Rights Reserved.</p>
+            </div>
+           </footer>
+
+           <div class="form-top" id="formElement1" style="display: none;">
+            <div class="form-1">
+                <form method="" action="" name="reg_form" >    
+                    <h2>Log in to your account</h2>    
+                    <table>    
+                        <tr>    
+                            <td>    
+                                <input type="text" name="UserName" required placeholder="UserName"id="tex" >    
+                            </td>    
+                        </tr> 
+                        <tr>       
+                            <td>    
+                                <input type="password" name="email" required placeholder="password" id="tex">    
+                            </td>    
+                        </tr>   
+                        <tr>    
+                            <td>    
+                                <input type="submit" name="submit" value="Login" id="te"><br><br>  
+                                <input type="reset" name="reset" value="Don't have an account?" id="te"><br><br> 
+                                <input type="reset" name="reset" value="Forgot Password"id="te"> 
+                                <button type="button" id="cross1" class="btn cancel" onclick="closeForm()">X</button>   
+                            </td>    
+                        </tr>             
+                    </table>    
+                </form>  
+            </div>
+            <div class="form-2">
+                <img src="images/singnup.jpg" width="300px"height="400px" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="form-top1" id="formElement" style="display: none;">
+          <div class="form-1">
+              <form method="" action="" name="reg_form" >    
+                  <h2>Create an account</h2>    
+                  <table>    
+                      <tr>    
+                          <td>    
+                              <input type="text" name="UserName" required placeholder="UserName" id="tex">    
+                          </td>    
+                      </tr> 
+                      <tr>      
+                          <td>    
+                              <input type="Email" size="50" required name="address" placeholder="Email" id="tex">    
+                          </td>    
+                      </tr>    
+                      <tr>       
+                          <td>    
+                              <input type="password" name="email" required placeholder="password" id="tex">    
+                          </td>    
+                      </tr>   
+                      <tr>
+                          <td>    
+                              <input type="password" name="email" required placeholder="Retype password" id="tex">    
+                          </td>
+                      </tr> 
+                      <tr>    
+                          <td>    
+                              <input type="number" required name="mobile" placeholder="phone" id="tex">    
+                          </td>    
+                      </tr>  
+                      <tr>
+                          <td>
+                              <input type="radio">
+                              I only want to book
+                          </td>
+                      </tr>   
+                      <tr>
+                          <td>
+                              <input type="radio">
+                              I want to be a Host
+                          </td>
+                      </tr>   
+                      <tr>
+                          <td>
+                              <input type="checkbox">
+                              I agree with <a href="#">terms & conditions</a>
+                          </td>
+                      </tr>
+                      <tr>    
+                          <td>    
+                              <input type="submit" name="submit" value="Create acount" id="te"><br><br>   
+                              <button type="button" id="cross" class="btn cancel" onclick="closeForm1()">X</button>   
+                          </td>    
+                      </tr> 
+                      <tr>
+                          <td>
+                              <a href="#">Already a member? Log in</a>
+                          </td>
+                      </tr>  
+                               
+                  </table>    
+              </form>  
+          </div>
+          <div class="form-2">
+              <img src="images/singnup.jpg" width="300px"height="400px" alt="">
+          </div>
+      </div>
+        <script>
+            function reactiveTopNav() {
+                const topNav = document.getElementById("myTopnav");
+
+                topNav.classList.contains("responsive")
+                    ? topNav.classList.remove("responsive")
+                    : topNav.classList.add("responsive");
+            }
+            window.onscroll = function () {
+                stickyTopNav();
+            };
+
+            var navbar = document.getElementById("myTopnav");
+            var sticky = navbar.offsetTop;
+
+            function stickyTopNav() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+
+
+            function showForm1() {
+        document.getElementById('formElement1').style.display = 'block';
+    }
+    function closeForm(){
+            document.getElementById("formElement1").style.display="none";
+        }
+
+
+        function showForm() {
+        document.getElementById('formElement').style.display = 'block';
+    }
+    function closeForm1(){
+            document.getElementById("formElement").style.display="none";
+        }
+
+
+
+
+
+
+
+
+
+        function search_animal() {
+	let input = document.getElementById('searchbar').value
+	input=input.toLowerCase();
+	let x = document.getElementsByClassName('animals');
+	let list = document.getElementById('list');
+	
+	if (input.length > 0) {
+		list.style.display="block";
+		
+		for (i = 0; i < x.length; i++) {
+			if (!x[i].innerHTML.toLowerCase().includes(input)) {
+				x[i].style.display="none";
+			}
+			else {
+				x[i].style.display="list-item";				
+			}
+		}
+	}
+	else {
+		list.style.display="none";
+	}
+}
+        </script>
+        
+    </body>
+</html>

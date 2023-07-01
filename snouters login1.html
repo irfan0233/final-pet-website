@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snouters login</title>
+    <style>
+        .form-top{
+            width: 80%;
+            float: left;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            margin-top: 50px;
+        }
+        .form-1{
+            width: 70%;
+            float: left;
+        }
+        .form-1 input{
+            width: 500px;
+            height: 30px;
+        }
+        .form-1 #te{
+            width: 500px;
+            height: 40px;
+            background-color: rgba(13, 167, 206, 0.959);
+            border: none;
+        }
+        .form-2{
+            width: 30%;
+            float: left;
+        }
+        #cross1{
+    position: absolute;
+    color: #fff;
+    opacity: 1;
+    top: 30px;
+    right: 15%;
+    padding:0px 5px 5px 5px;
+    text-shadow: none;
+    font-weight: 400;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #222;
+    border-radius: 50%;
+    z-index: 99;
+        }
+    </style>
+</head>
+<body>
+    <a  onclick="showForm1()" style="float:left">Show the form</a>
+    <div class="form-top" id="formElement1" style="display: none;">
+        <div class="form-1">
+            <form method="" action="" name="reg_form" >    
+                <h2>Log in to your account</h2>    
+                <table>    
+                    <tr>    
+                        <td>    
+                            <input type="text" name="UserName" required placeholder="UserName">    
+                        </td>    
+                    </tr> 
+                    <tr>       
+                        <td>    
+                            <input type="password" name="email" required placeholder="password">    
+                        </td>    
+                    </tr>   
+                    <tr>    
+                        <td>    
+                            <input type="submit" name="submit" value="Login" id="te"><br><br>  
+                            <input type="reset" name="reset" value="Don't have an account?" id="te"><br><br> 
+                            <input type="reset" name="reset" value="Forgot Password"id="te"> 
+                            <button type="button" id="cross1" class="btn cancel" onclick="closeForm()">X</button>   
+                        </td>    
+                    </tr>             
+                </table>    
+            </form>  
+        </div>
+        <div class="form-2">
+            <img src="images/singnup.jpg" width="300px"height="400px" alt="">
+        </div>
+    </div>
+    <script>
+         function showForm1() {
+        document.getElementById('formElement1').style.display = 'block';
+    }
+    function closeForm(){
+            document.getElementById("formElement1").style.display="none";
+        }
+    </script>  
+</body>
+</html>

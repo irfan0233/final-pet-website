@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>DOG GROOMMER</title>
+    <style>
+        body {
+          margin:0;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          
+        }
+        html{
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+        }
+
+
+        .topnav {
+      overflow: hidden;
+      background-color:white;
+      z-index: 1;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav img{
+        padding: none;
+    }
+    .header {
+  background-color:#09a1b9;
+  padding: 33px;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  width: 100%;
+    }
+.header-left{
+  float: left;
+  font-size: 17px;
+  text-align: center;
+  margin-top: -15px;
+}
+.header-middle{
+  float: left;
+  margin-left: 410px;
+  font-size: 17px;
+  text-align: center;
+  margin-top: -15px;
+}
+.header-right{
+  float: right;
+  margin-left: 100px;
+  align-items: center;
+  color: black;
+  margin-top: -25px;
+  margin-right: 40px;
+}
+.header-right i.fa {
+  display: inline-block;
+  border-radius: 40px;
+  box-shadow: 0 0 2px #888;
+  padding:10px 10px;
+  background-color: rgba(230, 161, 12, 0.952);
+}
+   .header-down{
+    margin-top: 20px;
+   }
+    .topnav .icon {
+      display: none;
+    }
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    .dropdown .dropbtn {
+      font-size: 17px;
+      border: none;
+      outline: none;
+      color: black;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+      
+    }
+    .dropdown-content {
+      display: none;
+      position: fixed;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+  
+    
+    .dropdown-content a:hover {
+      background-color: #074b4b;
+      color: white;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    .sticky+body {
+      padding-top: 60px;
+    }
+    #bh{
+        background-color: #09a1b9;
+        border: none;
+        padding: 10px 20px;
+    }
+    #bh:hover{
+      background-color: #b92309;
+      color: white;
+    }
+
+
+
+
+
+
+
+
+.container {
+  
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+.centered1 {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  
+}
+.centered2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #00b3b3;
+  
+}
+.button {
+  background-color: #00b3b3;
+  border-radius: 20px;
+  color: black;
+  padding: 15px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  
+}
+
+.top{
+   width: 100%;
+   float: left;
+   margin-top: 50px;
+   background-color: white;
+  }
+       
+        .right{
+            width: 95%;
+            float: left;
+            margin-top: 40px;
+            text-align: center;
+            display: block;
+        }
+        .right h1{
+          text-align: center;
+        }
+        .card{
+            width: 28%;
+            float: left;
+            text-align: center;
+            box-shadow: white;    
+            margin-left: 35px;   
+            height:250px;
+         
+
+        }
+   .block1{
+   margin-top: 50px;
+   width: 100%;
+  }
+  .block1 h1{
+    text-align: center;
+    width: 100%;
+  }
+  .block2{
+   width: 100%;
+   float: left;
+   margin-top: 50px;
+   background-color: white;
+  }
+       
+        .right2{
+            width: 95%;
+            float: left;
+            margin-top: 40px;
+        }
+        .card1{
+            width: 30%;
+            float: left;
+            text-align: center;
+            box-shadow: white;    
+            margin-left: 35px;   
+            height:250px;
+
+        }
+        .block3{
+   width: 100%;
+   float: left;
+   margin-top: 50px;
+   background-color: white;
+  }
+  .block4{
+   width: 80%;
+   float: left;
+   margin-top: 100px;
+   background-color: white;
+   margin-left: 180px;
+  }
+   
+        .right3{
+            width: 100%;
+            float: left;
+            margin-top: 40px;
+        }
+        .card2{
+            width: 32%;
+            float: left;
+            text-align: center;
+            box-shadow: white;    
+            margin-left: 150px;   
+            height:290px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+
+        }
+        .block4{
+   width: 85%;
+   float: left;
+   margin-top: 100px;
+   background-color: white;
+   margin-left: 180px;
+   box-shadow: white;
+  }
+   
+        .right4{
+            width: 100%;
+            float: right;
+            margin-top: 40px;
+            box-shadow: white;
+        
+        }
+        .card3{
+            width: 70%;
+            float: left;
+            text-align: center;
+            margin-left: -300px;   
+            height:930px;
+            
+
+        }
+        .button {
+  background-color: #00b3b3;
+  border-radius: 20px;
+  color: black;
+  padding: 15px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.button {
+  background-color: #00b3b3; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  width: 330px;
+  
+}
+.button2 {
+  background-color: #00b3b3; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  width: 330px;
+  border-radius: 2px;
+  
+}
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+        .img
+        {
+          margin-top: 430px;
+        }
+  .flex-container {
+  display: flex;
+  align-items: stretch;
+ 
+}
+
+.flex-container>div {
+  background-color: whitesmoke;
+  color: black;
+  width: 100px;
+  margin: 1px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+}     
+
+.block11-top{
+  width: 100%;
+  float: left;
+   margin-top: 30px;
+   background-color: #074b4b;
+   color: white;
+}
+.block11-items{
+  width: 30%;
+  float: left;
+  margin-left: 40px;
+  list-style-type: none;
+}
+li:hover{
+  color:  coral;
+}
+#act{
+  color:  white;
+}
+hr{
+  width: 90%;
+}
+
+.icons hr{
+width: 20%;
+float: left;
+margin-left: 3px;
+margin-top: 15px;
+}
+.icons img{
+  float: left;
+  margin-left: 15px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  width:80%;
+  margin-left: 100px;
+}
+
+.flex-item-left {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 30%;
+  height:500px;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 70%;
+   height:500px;
+
+}
+.block3-right2-pic{
+    float: left;
+}
+
+.block3-right2{
+    width: 100%;
+    float: left;
+}
+.block3-right{
+    width: 40%;
+    float: left;
+}
+.block3-left{
+    width: 40%;
+    float: left;
+    margin-left: 30px;
+    height: auto;
+    margin-top: 30px;
+    height: 450px;
+    box-shadow: #00b3b3;
+}
+.block3-right2-tex h3{
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.block7-top{
+        width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    float: left;
+    }
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media screen and (max-width: 600px) {
+   /* .topnav.responsive {
+        position: relative;
+    } */
+    .topnav.responsive .icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .topnav.responsive .dropdown {
+        float: none;
+      }
+      .topnav.responsive .dropdown-content {
+        position: relative;
+      }
+      .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    #bh{
+        padding: none;
+    }
+    .header-middle{
+        margin-left: 10px;
+    }
+    
+   
+
+html,body {
+    width: 100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    
+  }
+  .container{
+  width: 100%;
+  display: block;
+  float: none;
+}
+.container1{
+  margin-top: -450px;
+}
+  .container img{
+  
+    margin-top: 40px;
+    width: 100%;
+   
+}
+  .centered1
+  { 
+    width: 100%;
+    position: relative;
+    display: block;
+    text-align: center;
+   
+  }
+  .centered
+  { width: 100%;
+   
+   display: block;
+   text-align: center;
+
+ 
+    position: relative;
+  
+ }
+  .centered2
+  { 
+    margin-top: 50px;
+    width: 100%;
+     display: block;
+     
+    text-align: center;
+
+    position: relative;
+   
+  }
+  .right{
+    width: 90%;
+    display: block;
+    text-align: center;
+    float: left;
+  }
+  .card{
+            width: 90%;
+            float: left;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+            margin-left: 15px; 
+            margin-top: 5px;
+            height:400px; 
+       }
+        .block1{
+          width: 90%;
+    height: auto;
+    float: left;
+        }
+        .block2 h1
+{
+  width: 80%;
+  font-size: 5px;
+  height: auto;
+  float: left;
+}
+.card1{
+width: 100%;
+height: auto;
+float: left;
+}
+.block2{
+  width: 80%;
+  float: none;
+  display: block;
+  margin: none;
+}
+.card2{
+  width: 50%;
+height: auto;
+float: left; 
+}
+.block3{
+    width: 100%;
+    height: auto;
+    float: left;
+        }
+        .block3 h1{
+          width: 90%;
+          float: none;
+          margin: none;
+          display: block ;
+        }
+
+        .block4
+        {
+          width: 100%;
+         height: auto;
+          float: left;
+        }
+        .button 
+        {
+          width: 50%;
+          height: 50px;
+          float: left;
+          margin-left: 100px;
+         
+        }
+        .button2 
+        {
+          width: 40%;
+          height: 30px;
+          float: left;
+          margin-left: 100px;
+         
+        }
+       .block4 h2{
+        width: 80%;
+  font-size: 25px;
+  height: auto;
+  float: left;
+       }
+       .block4 p{
+       font-size: 10px;
+       float: left;
+       margin-right: 250px;
+       }
+       .block3-top{
+        width: 100%;
+        float: left;
+       }
+       .block3-left img{
+        width: 100%;
+        float: left;
+        margin: none;
+        display: block;
+        height: 600px;
+       }
+       .block3-right1{
+        display: block;
+        width: 70%;
+        float: none;
+       }
+       .card3 img{
+        width: 70%;
+        float: none;
+        margin:none;
+        display: block;
+
+       }
+     
+       .right4{
+        width: 100%;
+        display: block;
+        float: none;
+       }
+       .block3-left
+       {
+        width: 70%;
+        float: none;
+        margin:none;
+        display: block;
+       }
+       .block3-right{
+        width: 90%;
+        float: none;
+        margin:none;
+        display: block;
+       }
+       .block3-right1 h2{
+        text-align: center;
+        display: block;
+        float:none;
+       }
+       .flex-container {
+    flex-direction: column;
+    margin-right: 30px;
+    width: 100%;
+
+  }
+  .flex-item-left{
+    width: 90%;
+height: auto;
+float: left;
+  }
+  .flex-item-left img{
+  height:auto;
+  width: 80%;
+  }
+  .flex-item-right{
+    font-size: 20px;
+    width: 100%;
+height: auto;
+float: left;
+
+  }
+}
+@media screen and (max-width: 875px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 875px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .icons{
+    display: none;
+  }
+  html,body {
+    width: 100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+  }
+  .container{
+  width: 100%;
+  display: block;
+  float: none;
+}
+.container1{
+  margin-top: -450px;
+}
+  .container img{
+  
+    margin-top: 40px;
+    width: 100%;
+   
+}
+  .centered1
+  { 
+    width: 100%;
+    position: relative;
+    display: block;
+    text-align: center;
+   
+  }
+  .centered
+  { width: 100%;
+   
+   display: block;
+   text-align: center;
+
+ 
+    position: relative;
+  
+ }
+  .centered2
+  { 
+    margin-top: 50px;
+    width: 100%;
+     display: block;
+     
+    text-align: center;
+
+    position: relative;
+   
+  }
+  .right h1{
+    margin-top: 100px;
+     display: block;
+     text-align: center;
+  }
+  .right{
+    width: 90%;
+    display: block;
+    text-align: center;
+    float: none;
+    margin-top: 100px;
+  }
+  .top h1{
+   margin-top: 170px;
+  }
+  .card{
+            width: 90%;
+            float: left;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);    
+            margin-left: 15px; 
+            margin-top: 5px;
+            height:400px; 
+           
+
+        }
+        .block1{
+          width: 90%;
+    height: auto;
+    float: left;
+        }
+        .block2 h1
+{
+  width: 80%;
+  font-size: 5px;
+  height: auto;
+  float: left;
+}
+.card1{
+width: 100%;
+height: auto;
+float: left;
+}
+.block2{
+  width: 80%;
+  float: none;
+  display: block;
+  margin: none;
+}
+.card2{
+  width: 50%;
+height: auto;
+float: left; 
+}
+.block3{
+    width: 100%;
+    height: auto;
+    float: left;
+        }
+        .block3 h1{
+          width: 90%;
+          float: none;
+          margin: none;
+          display: block ;
+        }
+
+        .block4
+        {
+          width: 100%;
+         height: auto;
+          float: left;
+        }
+        .button 
+        {
+          width: 50%;
+          height: 50px;
+          float: left;
+          margin-left: 100px;
+         
+        }
+        .button2 
+        {
+          width: 40%;
+          height: 30px;
+          float: left;
+          margin-left: 100px;
+         
+        }
+       .block4 h2{
+        width: 80%;
+  font-size: 25px;
+  height: auto;
+  float: left;
+       }
+       .block4 p{
+       font-size: 10px;
+       float: left;
+       margin-right: 250px;
+       }
+       .block3-top{
+        width: 100%;
+        float: left;
+       }
+       .block3-left img{
+        width: 100%;
+        float: left;
+        margin: none;
+        display: block;
+        height: 600px;
+       }
+       .block3-right1{
+        display: block;
+        width: 70%;
+        float: none;
+       }
+       .card3 img{
+        width: 70%;
+        float: none;
+        margin:none;
+        display: block;
+
+       }
+     
+       .right4{
+        width: 100%;
+        display: block;
+        float: none;
+       }
+       .block3-left
+       {
+        width: 70%;
+        float: none;
+        margin:none;
+        display: block;
+       }
+       .block3-right{
+        width: 90%;
+        float: none;
+        margin:none;
+        display: block;
+       }
+       .block3-right1 h2{
+        text-align: center;
+        display: block;
+        float:none;
+       }
+       .flex-container {
+    flex-direction: column;
+    margin-right: 30px;
+    width: 100%;
+
+  }
+  .flex-item-left{
+    width: 90%;
+height: auto;
+float: left;
+  }
+  .flex-item-left img{
+  height:auto;
+  width: 80%;
+  }
+  .flex-item-right{
+    font-size: 20px;
+    width: 100%;
+height: auto;
+float: left;
+
+  }
+ 
+}
+</style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+          <i class="fa fa-envelope"></i>
+          info@michbiz.net
+        </div>
+        <div class="header-middle">
+          <i class="fa fa-phone"></i>
+          +91 9652603547
+        </div>
+        <div class="header-right">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-telegram"></i>
+        </div>
+      </div>
+  <div class="topnav" id="myTopnav">
+    <a href=""><img src="images/logo.png" width="100px" height="90px" alt="" id="logo"></a>
+    <div class="header-down">
+    <a href="#home" class="active" >Home</a>
+    <div class="dropdown" >
+      <button class="dropbtn">
+                    Pet services
+                </button>
+      <div class="dropdown-content">
+        <a href="#">Pet Boarding</a>
+        <a href="#">Doggy Care</a>
+        <a href="#">Pet Grooming</a>
+        <a href="#">Dog Walking</a>
+        <a href="#">Dog Training</a>
+        <a href="#">Vet Consultant</a>
+      </div>
+    </div>
+    <div class="dropdown" >
+        <button class="dropbtn">
+                      Deal Shop
+                  </button>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/food%20and%20nutrition%20final%20.html">Food & Nutrition</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/gromming%20final.html">Grooming & Wellness</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/dog%20bedding%20final.html">Dog Bedding & Clothing</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/pet%20art%20final.html">Pet Art</a>
+        </div>
+      </div>
+      <div class="dropdown" >
+        <button class="dropbtn">
+                      Partner Sigup
+                  </button>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/snouters%20host.html">Become a Snouters Host</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/dog%20walker.html">Become a Dog Walker</a>
+        </div>
+      </div>
+      <a href="#" >Blogs</a>
+      <div class="dropdown" >
+        <button class="dropbtn" style="margin-top: -10px;">
+                     <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20about%20us%20responsive.html" > About us</a>
+                  </button>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20meet%20our%20team%20responsive.html">Meet Our Team</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20contact%20us%20responsive.html">Contact</a>
+        </div>
+      </div>
+      <a href="#" onclick="showForm1()" style="float:left">Login</a>
+      <a href="#" onclick="showForm()" style="float:left">Signup</a>
+      <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/become%20host.html" ><button id="bh">Become Host</button></a>
+    <a href="javascript:void(0);" style="font-size: 15px" class="icon" onclick="reactiveTopNav()">&#9776;</a>
+        </div>
+        </div>
+
+      <div class="container">
+        <img src="Images/wp5200927.JPG" width="100%" height="600px" alt="meesho seller advertisement image">       
+      </div>
+      <div class="container1">
+        <div class="centered" style="font-size: 36px;color: white;"><b>Are you looking for a Pet Groomer Job ?</b>
+        </div>
+        <div class="centered1" style="font-size: 20px;color: white;"><b>Apply for Pet Groomer Job and get paid for your expertise.</b>
+        </div>
+        <div class="centered2">
+          <button class="button "><b>Become Pet Groommer </b></button>
+      
+      </div>
+      </div>
+     
+      
+      <div class="top">
+        <h1 style="font-size: 65px;color: #00b3b3;text-align: center;"><b>How we works</b></h1>
+
+            <div class="card">
+                <img src="Images/number-one (2).png"  width="30%" height="90px" alt="">
+               
+                <h2 style="font-size: 25px;"><b>List your services for free</b></h2>
+                <p>Register for free with our pet boarding services. Our team will verify and help you create your listing.</p>
+            </div>
+            <div class="card">
+              <img src="Images/number-2 (4).png"  width="30%" height="90px" alt="">
+
+              <h2 style="font-size: 25px;"><b>Flexible</b></h2>
+                <p>Choose any time and services you wish to offer</p>
+            </div>
+            <div class="card">
+               
+              <img src="Images/number-3 (1).png"  width="30%" height="90px" alt="">
+              <h2 style="font-size: 25px;"><b>Join the Network</b></h2>
+                <p>Once listed, sit back and relax while our team connects you with suitable pet parents in your area.</p>
+            </div>
+        </div>
+    </div>
+    <div class="block3-top">
+      <div class="block3-left">
+          <img src="Images/dog-training-1.jpg" width="95%"  alt="">
+      </div>
+      <div class="block3-right">
+          <div class="block3-right1">
+          <h2 style="font-size: 30px;color:#00b3b3 ;text-align: center;">Jobs we offer</h2><br>
+      </div>
+      <div class="block3-right2">
+          <div class="block3-right2-pic">
+              <img src="Images/star (2).png" width="40px;" alt="">
+          </div>
+          <div class="block3-right2-tex">
+              <h3 style="color: #00b3b3;">Dog Groomer Job</h3><br>
+          </div>
+          <div>
+              <p style="top:20px;">Take up a pet sitter job and care for the pets at their own house. Become a pet sitter.</p>
+          </div>
+      </div>
+      <div class="block3-right2-pic">
+          <img src="Images/star (2).png" width="40px;" alt="" style="margin-top: -8px;">
+      </div>
+      <div class="block3-right2-tex">
+          <h3 style="color: #00b3b3;" >Cat Groomer Job</h3><br>
+      </div>
+      <div>
+  <p>Take by the pet boarding job to invite the pets to your house and have a furry partner with you overnight.</p>
+  </div>
+  <div class="block3-right2-pic">
+      <img src="Images/star (2).png" width="40px;" alt="" style="margin-top: -8px;">
+  </div>
+  <div class="block3-right2-tex">
+      <h3 style="color: #00b3b3;">Dog walking</h3><br>
+  </div>
+  <div>
+<p>Boost your health with the company of a dog. Sign up for dog walking jobs that fit your schedule.</p>
+</div>
+</div>
+  </div>
+    
+    <div class="block2">
+      <h1 style="font-size: 55px;color: #00b3b3;padding-left: 80px;" ><b>What are the benefits of registering with us?</b></h1>
+      <div class="right2">
+          <div class="card1">
+              <img src="Images/star (2).png"  width="15%" height="50px" alt="">
+             
+              <h2 style="font-size: 25px;color: black"><b>Flexible working hours</b></h2>
+          </div>
+          <div class="card1">
+            <img src="Images/star (2).png"  width="15%" height="50px" alt="">
+
+
+            <h2 style="font-size: 25px;color: black;"><b>Zero investment business.</b></h2>
+          </div>
+          <div class="card1">
+             
+            <img src="Images/star (2).png"  width="15%" height="50px" alt="">
+            <h2 style="font-size: 25px;color: black;"><b>Additional income.</b></h2>
+          </div>
+          <div class="card1">
+             
+            <img src="Images/star (2).png"  width="15%" height="50px" alt="">
+            <h2 style="font-size: 25px;color: black;"><b>Free Snouters resource materials and guides for a better pet grooming experience.</b></h2>
+          </div>
+          <div class="card1">
+             
+            <img src="Images/star (2).png"  width="15%" height="50px" alt="">
+            <h2 style="font-size: 25px;color: black;"><b>Support from Team Snouters.</b></h2>
+          </div>
+          <div class="card1">
+             
+            <img src="Images/star (2).png"  width="15%" height="50px" alt="">
+            <h2 style="font-size: 25px;color: black;"><b>Service Pet grooming bookings at Customer Homes.</b></h2>
+          </div>
+      </div>
+  </div>  
+</div>   
+  <div class="block3">
+    <h1 style="font-size: 55px;color: #00b3b3;text-align: center;" ><b>What Our Partners Say</b></h1>
+    <div class="right3">
+        <div class="card2">
+           <p style="font-size: 20px;margin-bottom: 30px;">It has been incredible hosting with Snouters.The quality of bookings is amazing. I have really enjoyed hosting multiple dogs over the last few months. Would highly recommend to other pet parents. </p>
+           <p style="font-size: 20px;color: #00b3b3;margin-bottom: 30px;"><b>Kiran</b></p>
+        </div>
+        <div class="card2">
+         <p  style="font-size: 20px;margin-bottom: 30px;">I started hosting with Snouters two months back. It has been a very fulfilling experience meeting new pets. The Snouters team is always available and very helpful. It has been such a smooth journey from applying to be a host to taking bookings.</p>
+         <p style="font-size: 20px;color: #00b3b3;margin-bottom: 20px;"><b>Kumar</b></p>
+
+        </div>   
+    </div>
+</div>
+<div class="block4">
+    <div class="right4">
+        <div class="card3">
+            <img src="Images/Dog-grooming-service-bangalore-768x543.jpg" style="margin-top: -1px;padding-left: 130px;" width="70%" height="900px" alt="">
+
+        </div>
+        <div class="card3">
+            
+           <button1 class="button2" style="margin-left: 350px;">Sign up for Pet Sitter</button>
+           </div>  
+    </div>
+</div>
+
+<div class="block7-top">
+  <div class="block7-heading">
+      <h2>About Snouters Pet Groomer Jobs</h2>
+  </div>
+  <div class="para1">
+      <p>
+        If you love animals and are passionate about making your job interesting and fun, we got you. “Doing this means a lot to me, every pet brings me pleasure and I can’t wait for them to come back next time.” says one of our new pet groomers. By becoming a pet groomer with Snouters you will be able to encourage pet health. You will be able to inform people about better ways to take care of their fur babies. Not just that it will also give you satisfaction and inner peace from doing what you love. Pet groomer job at Snouters will be one of the most rewarding experiences for you. 
+      </p><br>
+      <p>
+        When you love animals there is no task more rewarding than caring for pets. By taking up a dog groomer job or cat groomer job with snouters you get to bring out your artistic and creative self in the most fun way possible. “ After each session, I am filled with a sense of accomplishment. It is like I make a new fur friend each time.” says one of our dog groomers. “ I used to work at a corporate, after shifting to a new city I did not join a company. I started working with Snouters, and after every session, the pet owners say “thank you”, this rarely happens in the corporate.” says another happy cat groomer of ours.
+      </p><br>
+      <p>
+        We want to provide our customers with the best grooming services, and to ensure that all of our groomers on the job need to meet a few requirements. All our groomers are highly trained experts to ensure that our customers get the most compassionate groomers with best in class services. The impact that our pet groomers have is more than just a bath and style, our groomers become an advisor to the pet parent. From care to health to behaviour we ensure that our pet groomers are well informed in all these areas.
+      </p><br>
+      <p>
+        We are proud to be an organisation that offers diverse working opportunities to pet groomers. All our groomers are highly paid for the home pet grooming bookings they service. Our team makes it very easy for every new dog groomers or cat groomers to be a part of our family. We are more than happy to help you at every stage of your onboarding, all you need to do is approach us. We provide our pet groomers with the best skills so that each groomer in our family becomes an expert. We have pet grooming jobs in all the leading cities in India – Bangalore, Delhi, Gurgaon, Hyderabad, Mumbai, Pune, Noida, Kolkata, Chennai.
+
+
+      </p><br>
+      <p>
+         <b> Have more questions on why you should take up a Pet Sitter Job or Dog Sitter Job with Snouters ?</b>
+      </p><br>
+      <p>
+          Read Our Pet Sitter Groommer Blog !
+      </p>
+
+
+
+  </div>
+</div>
+<footer>
+  <div class="block11-top">
+    <div class="block11-items">
+      <img src="Images/logo.png" alt="" width="120px"; height="100px"; />
+
+      <p>MICHBIZ is India’s largest network of 5-star pet home stays. Snouters connects pet parents with loving pet care providers who offer overnight services, including boarding and in-home pet sitting, as well as daytime services, including doggy daycare, dog walking, drop-in visits, and grooming.</p><br>
+      <P id="act">Connect with us:</P>
+    </div>
+    <div class="block11-items">
+      <h4 id="act">Important Links</h4><br>
+      <li>The MICHBIZ Guarantee</li><br>
+      <li>Cancellation Policy</li><br>
+      <li>Reservation Protection</li><br>
+      <li>MICHBIZ Host Resources</li><br>
+      <li>FAQ</li><br>
+      <li>Contact us</li><br>
+      <li>Help</li><br>
+    </div>
+    <div class="block11-items">
+      <h4 id="act">Apply</h4>
+      <li>Become a MICHBIZ Host</li><br>
+      <li>Become a Dog Walker</li><br>
+      <li>Become a Pet Groomer</li><br>
+    </div>
+    <hr>
+    <p>© 2015-22 Meesho Inc. All Rights Reserved.</p>
+  </div>
+ </footer>
+
+
+
+ <div class="form-top" id="formElement1" style="display: none;">
+    <div class="form-1">
+        <form method="" action="" name="reg_form" >    
+            <h2>Log in to your account</h2>    
+            <table>    
+                <tr>    
+                    <td>    
+                        <input type="text" name="UserName" required placeholder="UserName"id="tex" >    
+                    </td>    
+                </tr> 
+                <tr>       
+                    <td>    
+                        <input type="password" name="email" required placeholder="password" id="tex">    
+                    </td>    
+                </tr>   
+                <tr>    
+                    <td>    
+                        <input type="submit" name="submit" value="Login" id="te"><br><br>  
+                        <input type="reset" name="reset" value="Don't have an account?" id="te"><br><br> 
+                        <input type="reset" name="reset" value="Forgot Password"id="te"> 
+                        <button type="button" id="cross1" class="btn cancel" onclick="closeForm()">X</button>   
+                    </td>    
+                </tr>             
+            </table>    
+        </form>  
+    </div>
+    <div class="form-2">
+        <img src="images/singnup.jpg" width="300px"height="400px" alt="">
+    </div>
+</div>
+
+
+
+<div class="form-top1" id="formElement" style="display: none;">
+  <div class="form-1">
+      <form method="" action="" name="reg_form" >    
+          <h2>Create an account</h2>    
+          <table>    
+              <tr>    
+                  <td>    
+                      <input type="text" name="UserName" required placeholder="UserName" id="tex">    
+                  </td>    
+              </tr> 
+              <tr>      
+                  <td>    
+                      <input type="Email" size="50" required name="address" placeholder="Email" id="tex">    
+                  </td>    
+              </tr>    
+              <tr>       
+                  <td>    
+                      <input type="password" name="email" required placeholder="password" id="tex">    
+                  </td>    
+              </tr>   
+              <tr>
+                  <td>    
+                      <input type="password" name="email" required placeholder="Retype password" id="tex">    
+                  </td>
+              </tr> 
+              <tr>    
+                  <td>    
+                      <input type="number" required name="mobile" placeholder="phone" id="tex">    
+                  </td>    
+              </tr>  
+              <tr>
+                  <td>
+                      <input type="radio">
+                      I only want to book
+                  </td>
+              </tr>   
+              <tr>
+                  <td>
+                      <input type="radio">
+                      I want to be a Host
+                  </td>
+              </tr>   
+              <tr>
+                  <td>
+                      <input type="checkbox">
+                      I agree with <a href="#">terms & conditions</a>
+                  </td>
+              </tr>
+              <tr>    
+                  <td>    
+                      <input type="submit" name="submit" value="Create acount" id="te"><br><br>   
+                      <button type="button" id="cross" class="btn cancel" onclick="closeForm1()">X</button>   
+                  </td>    
+              </tr> 
+              <tr>
+                  <td>
+                      <a href="#">Already a member? Log in</a>
+                  </td>
+              </tr>  
+                       
+          </table>    
+      </form>  
+  </div>
+  <div class="form-2">
+      <img src="images/singnup.jpg" width="300px"height="400px" alt="">
+  </div>
+</div>
+      <script>
+        function reactiveTopNav() {
+                const topNav = document.getElementById("myTopnav");
+
+                topNav.classList.contains("responsive")
+                    ? topNav.classList.remove("responsive")
+                    : topNav.classList.add("responsive");
+            }
+            window.onscroll = function () {
+                stickyTopNav();
+            };
+
+            var navbar = document.getElementById("myTopnav");
+            var sticky = navbar.offsetTop;
+
+            function stickyTopNav() {
+                if (window.pageYOffset >= sticky) {
+                    navbar.classList.add("sticky");
+                } else {
+                    navbar.classList.remove("sticky");
+                }
+            }
+      </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snouters signup</title>
+    <style>
+        .form-top{
+            width: 80%;
+            float: left;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            margin-top: 50px;
+        }
+        .form-1{
+            width: 70%;
+            float: left;
+        }
+        .form-1 #tex{
+            width: 500px;
+            height: 30px;
+        }
+        .form-1 a{
+            text-decoration: none;
+            
+        }
+        .form-1 #te{
+            width: 500px;
+            height: 40px;
+            background-color: rgba(13, 167, 206, 0.959);
+            border: none;
+        }
+        .form-1 button{
+            width: 500px;
+            height: 40px;
+        }
+        .form-2{
+            width: 30%;
+            float: left;
+        }
+        #cross{
+    position: absolute;
+    color: #fff;
+    opacity: 1;
+    top: 30px;
+    right: 15%;
+    padding:0px 5px 5px 5px;
+    text-shadow: none;
+    font-weight: 400;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #222;
+    border-radius: 50%;
+    z-index: 99;
+        }
+    </style>
+</head>
+<body>
+    <a  onclick="showForm()" style="float:left">Show the form</a>
+    <div class="form-top" id="formElement" style="display: none;">
+        <div class="form-1">
+            <form method="" action="" name="reg_form" >    
+                <h2>Create an account</h2>    
+                <table>    
+                    <tr>    
+                        <td>    
+                            <input type="text" name="UserName" required placeholder="UserName" id="tex">    
+                        </td>    
+                    </tr> 
+                    <tr>      
+                        <td>    
+                            <input type="Email" size="50" required name="address" placeholder="Email" id="tex">    
+                        </td>    
+                    </tr>    
+                    <tr>       
+                        <td>    
+                            <input type="password" name="email" required placeholder="password" id="tex">    
+                        </td>    
+                    </tr>   
+                    <tr>
+                        <td>    
+                            <input type="password" name="email" required placeholder="Retype password" id="tex">    
+                        </td>
+                    </tr> 
+                    <tr>    
+                        <td>    
+                            <input type="number" required name="mobile" placeholder="phone" id="tex">    
+                        </td>    
+                    </tr>  
+                    <tr>
+                        <td>
+                            <input type="radio">
+                            I only want to book
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td>
+                            <input type="radio">
+                            I want to be a Host
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td>
+                            <input type="checkbox">
+                            I agree with <a href="#">terms & conditions</a>
+                        </td>
+                    </tr>
+                    <tr>    
+                        <td>    
+                            <input type="submit" name="submit" value="Create acount" id="te"><br><br>   
+                            <button type="button" id="cross" class="btn cancel" onclick="closeForm()">X</button>   
+                        </td>    
+                    </tr> 
+                    <tr>
+                        <td>
+                            <a href="#">Already a member? Log in</a>
+                        </td>
+                    </tr>  
+                             
+                </table>    
+            </form>  
+        </div>
+        <div class="form-2">
+            <img src="images/singnup.jpg" width="300px"height="400px" alt="">
+        </div>
+    </div>
+    <script>
+         function showForm() {
+        document.getElementById('formElement').style.display = 'block';
+    }
+    function closeForm(){
+            document.getElementById("formElement").style.display="none";
+        }
+    </script>  
+</body>
+</html>

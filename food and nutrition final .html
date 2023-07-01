@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Food and Nutrition</title>
+    <style>
+        body {
+          margin:0;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          
+        }
+        html{
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+        }
+        .topnav {
+      overflow: hidden;
+      background-color:white;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      
+    }
+    .topnav img{
+        padding: none;
+    }
+    .header {
+  background-color:#09a1b9;
+  padding: 33px;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  width: 100%;
+    }
+.header-left{
+  float: left;
+  font-size: 17px;
+  text-align: center;
+  margin-top: -15px;
+}
+.header-middle{
+  float: left;
+  margin-left: 410px;
+  font-size: 17px;
+  text-align: center;
+  margin-top: -15px;
+}
+.header-right{
+  float: right;
+  margin-left: 100px;
+  align-items: center;
+  color: black;
+  margin-top: -25px;
+  margin-right: 40px;
+}
+.header-right i.fa {
+  display: inline-block;
+  border-radius: 40px;
+  box-shadow: 0 0 2px #888;
+  padding:10px 10px;
+  background-color: rgba(230, 161, 12, 0.952);
+}
+   .header-down{
+    margin-top: 20px;
+   
+    
+   }
+    .topnav .icon {
+      display: none;
+    }
+    .dropdown {
+      float: left;
+      overflow: hidden;
+    }
+    .dropdown .dropbtn {
+      font-size: 17px;
+      border: none;
+      outline: none;
+      color: black;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+    .dropdown-content {
+      display: none;
+      position: fixed;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #074b4b;
+      color: white;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    #bh1:hover{
+      background-color: #b92309;
+      color: white;
+    }
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.head{
+    margin-top: 100px;
+    padding-left: 120px;
+}
+.right
+{   margin-top: -25px;
+    padding-left: 950px;
+}
+.block
+{
+    padding-left: 120px;
+}
+.block2{
+   width: 100%;
+   float: left;
+   margin-top: 50px;
+   background-color: white;
+   box-shadow: #00b3b3;
+  }
+       
+        .right2{
+            width: 100%;
+            float: left;
+            margin-top: 70px;
+            box-shadow: #00b3b3;
+            margin-left: 7%;
+            margin-right: 10%;
+        }
+        .card1{
+            width: 20%;
+            float: left;
+            text-align: center;
+            margin-left: 20px;
+            height:520px;
+            box-shadow:#00b3b3;
+          
+
+        }
+        .checked {
+  color: #00b3b3;
+  margin-top:-80px;
+}
+.money
+{
+  margin-bottom: 300px;
+}
+.w3-button 
+{
+  width:150px;
+}
+.pagination {
+  display: inline-block;
+  float:left;
+  margin-left:500px;
+  margin-top: 60px;
+
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color:  gainsboro;
+  color: #00b3b3;
+  border: 1px solid gainsboro;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+@media screen and (max-width: 600px) {
+      /* .topnav.responsive {
+        position: relative;
+    } */
+      .topnav.responsive .icon {
+        position: fixed;
+        right: 0;
+        top: 0;
+      }
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .topnav.responsive .dropdown {
+        float: none;
+      }
+      .topnav.responsive .dropdown-content {
+        position: relative;
+      }
+      .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+      }
+    #bh{
+        padding: none;
+    }
+    .header-middle{
+        margin-left: 10px;
+    }
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    .sticky+body {
+      padding-top: 60px;
+    }
+    #bh1{
+        background-color: #09a1b9;
+        border: none;
+        padding: 10px 20px;
+    }
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .card1{
+    width: 85%;
+    float: none;
+    padding-left: 20px;
+    display: block;
+  }
+  .right
+  { width:50%;
+    float: left;
+    display: block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 875px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 875px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .icons{
+    display: none;
+  }
+  html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+
+.form-top{
+            width: 70%;
+            float: left;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            top: 0;
+            margin-top: 180px;
+            position: absolute;
+            z-index: 99;
+            background-color: whitesmoke;
+            opacity: 1;
+            position: fixed;
+            margin-left: 100px;
+        }
+        .form-1{
+            width: 70%;
+            float: left;
+        }
+        
+        .form-1 #te{
+            width: 500px;
+            height: 40px;
+            
+            border: none;
+        }
+        .form-2{
+            width: 30%;
+            float: left;
+        }
+        #cross1{
+    position: absolute;
+    color: #fff;
+    opacity: 1;
+    top: 5px;
+    right: 0%;
+    padding:0px 5px 5px 5px;
+    text-shadow: none;
+    font-weight: 400;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #222;
+    border-radius: 50%;
+    z-index: 99;
+        }
+
+
+
+        .form-top1{
+          width: 70%;
+            float: left;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            top: 0;
+            margin-top: 100px;
+            position: absolute;
+            z-index: 99;
+            background-color: whitesmoke;
+            opacity: 1;
+            position: fixed;
+            margin-left: 100px;
+        }
+        .form-1 #tex{
+            width: 500px;
+            height: 30px;
+        }
+        .form-1 a{
+            text-decoration: none;
+            
+        }
+        .form-1 #te{
+            width: 500px;
+            height: 40px;
+            background-color: rgba(13, 167, 206, 0.959);
+            border: none;
+        }
+        .form-1 button{
+            width: 500px;
+            height: 40px;
+        }
+        .form-2{
+            width: 30%;
+            float: left;
+        }
+        #cross{
+    position: absolute;
+    color: #fff;
+    opacity: 1;
+    top: 5px;
+    right: 0%;
+    padding:0px 5px 5px 5px;
+    text-shadow: none;
+    font-weight: 400;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #222;
+    border-radius: 50%;
+    z-index: 99;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+          <i class="fa fa-envelope"></i>
+          info@michbiz.net
+        </div>
+        <div class="header-middle">
+          Call : +91 12345 67890
+        </div>
+        <div class="header-right">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-telegram"></i>
+        </div>
+      </div>
+  <div class="topnav" id="myTopnav">
+    <a href=""><img src="images/logo.png" width="100px" height="90px" alt="" id="logo"></a>
+    <div class="header-down">
+    <a href="#home" class="active" ><b>Home</b></a>
+    <div class="dropdown" >
+      <button class="dropbtn">
+                  <b>  Pet services</b>
+                </button>
+      <div class="dropdown-content">
+        <a href="#">Pet Boarding</a>
+        <a href="#">Doggy Care</a>
+        <a href="#">Pet Grooming</a>
+        <a href="#">Dog Walking</a>
+        <a href="#">Dog Training</a>
+        <a href="#">Vet Consultant</a>
+      </div>
+    </div>
+    <div class="dropdown" >
+        <button class="dropbtn">
+        <b>Deal Shop<b>
+                  </button>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/food%20and%20nutrition%20final%20.html">Food & Nutrition</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/gromming%20final.html">Grooming & Wellness</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/dog%20bedding%20final.html">Dog Bedding & Clothing</a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/pet%20art%20final.html">Pet Art</a>
+        </div>
+      </div>
+      <div class="dropdown" >
+        <button class="dropbtn">
+        <b>Partner Sigup
+    </b></button>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/snouters%20host.html"><b>Become a Snouters Host</b></a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/dog%20walker.html"><b>Become a Dog Walker</b></a>
+        </div>
+      </div>
+      <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20blog%20responsive.html" >Blogs</a>
+      <div class="dropdown" >
+        <button class="dropbtn" style="margin-top: -10px;">
+        <b> <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20about%20us%20responsive.html"> About us </a>
+        <b></button>
+        <div class="dropdown-content">
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20meet%20our%20team%20responsive.html"><b>Meet Our Team</b></a>
+          <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/michbiz%20contact%20us%20responsive.html"><b>Contact</b></a>
+        </div>
+      </div>
+      <a href="#" onclick="showForm1()" style="float:left">Login</a>
+      <a href="#" onclick="showForm()" style="float:left">Signup</a>
+      <a href="file:///C:/Users/Admin/Downloads/irfan%20souters/michbiz%20website/become%20host.html" ><button id="bh1"><b>Become Host</b></button></a>
+    <a href="javascript:void(0);" style="font-size: 15px" class="icon" onclick="reactiveTopNav()">&#9776;</a>
+        </div>
+        </div>
+    <div class="head">
+        <h1>Food</h1>
+    </div>
+    <div class="block">
+        <p>Showing all 14 results</p>
+        <div class="right">
+            <div class="header">
+            <form>
+            <div class="form-box">
+            <input list="brow"placeholder="Default Sorting">
+             <datalist id="brow">
+             <option value="Default Sorting">
+             <option value="Sort by popularity">
+              <option value="Sort by average rating">
+               <option value="Price low to high">
+                 <option value="Price high to low">
+                 </datalist> 
+        </div>
+            </div>
+        </div>
+    </div>  
+    <div class="block2">
+        <div class="right2">
+            <div class="card1">
+ 
+                <img src="Images\1.JPG"  width="70%" height="300px" alt="">
+                <img src="Images/sales.gif" style="margin-bottom:280px" width="20% " padding-left="60px" height="50px" margin-bottom="80px"alt="">
+               <h6 style="font-size: 15px;"><b>Chicken Treat For Dogs | Cheesy Chicken Rings + Tasty Chicken Strip (80gm)</b></h6>
+              <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <div class="money">
+               <p2><S>₹6767</S></p2><p2 style ="color:#00b3b3;padding-left: 20px;"><u>₹285.00</u></p2> 
+               <p><button class="#00b3b3">ADD TO CART</button></p>
+              </div> 
+      
+            </div>
+            <div class="card1">
+ 
+              <img src="Images/3.JPG"  width="70%" height="300px" alt="">
+              <img src="Images/sales.gif" style="margin-bottom:280px" width="20% " padding-left="60px" height="50px" margin-bottom="80px"alt="">
+             <h6 style="font-size: 15px;"><b>Doggiebites Fresh Dog Food | Chicken Recipes For Dogs | Chicken Chop Chop (300 gm)</b></h6>
+            <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <div class="money">
+             <p2><S>₹6767</S></p2><p2 style ="color:#00b3b3;padding-left: 20px;"><u>₹285.00</u></p2> 
+             <p><button class="#00b3b3">ADD TO CART</button></p>
+            </div> 
+    
+          </div>
+          
+            <div class="card1">
+ 
+              <img src="Images/5.JPG"  width="70%" height="300px" alt="">
+              <img src="Images/sales.gif"style="margin-bottom:280px" width="20% " padding-left="60px" height="50px" margin-bottom="80px"alt="">
+             <h6 style="font-size: 15px;"><b>Doggiebites Fresh Dog Food | Furry Meaty Lamb (300gm) Snouters (300 gm)</b></h6>
+            <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+             <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <div class="money">
+             <p2><S>₹6767</S></p2><p2 style ="color:#00b3b3;padding-left: 20px;"><u>₹285.00</u></p2>
+             <p><button class="#00b3b3">ADD TO CART</button></p>
+            </div> 
+    
+          </div>
+          <div class="card1">
+ 
+            <img src="Images/8.JPG"  width="70%" height="300px" alt="">
+            <img src="Images/sales.gif" style="margin-bottom:280px" width="20% " padding-left="60px" height="50px" margin-bottom="80px"alt="">
+           <h6 style="font-size: 15px;"><b>Doggiebites Fresh Wet Dog Food | Weekly Pack | Wet Dog Food For Adult And Puppy 300g (Pack Of 5)</b></h6>
+          <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <div class="money">
+           <p2><S>₹6767</S></p2><p2 style ="color:#00b3b3;padding-left: 20px;"><u>₹285.00</u></p2>
+           <p><button class="#00b3b3">ADD TO CART</button></p>
+          </div> 
+  
+        </div>
+        <div class="card1">
+ 
+          <img src="Images/7.JPG"  width="70%" height="300px" alt="">
+          <img src="Images/sales.gif" style="margin-bottom:280px" width="20% " padding-left="60px" height="50px" margin-bottom="80px"alt="">
+         <h6 style="font-size: 15px;"><b>Doggiebites Veg Dog Food | Drool Some Paneer (300 gm) Snouters</b></h6>
+        <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <div class="money">
+         <p2><S>₹6767</S></p2><p2 style ="color:#00b3b3;padding-left: 20px;"><u>₹285.00</u></p2> 
+         <p><button class="#00b3b3">ADD TO CART</button></p>
+        </div> 
+
+      </div>
+      <div class="card1">
+ 
+        <img src="Images/10.JPG"  width="70%" height="300px" alt="">
+        <img src="Images/sales.gif" style="margin-bottom:280px" width="20% " padding-left="60px" height="50px" margin-bottom="80px"alt="">
+       <h6 style="font-size: 15px;"><b>Snouters FreshlyBarked Applesauce & Cinnamon (300 gm)</b></h6>
+      <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <div class="money">
+       <p2><S>₹6767</S></p2><p2 style ="color:#00b3b3;padding-left: 20px;"><u>₹285.00</u></p2> 
+       <p><button class="#00b3b3">ADD TO CART</button></p>
+      </div> 
+
+    </div>
+    <div class="card1">
+ 
+      <img src="Images/11.jpg"  width="70%" height="300px" alt="">
+      <img src="Images/sales.gif" style="margin-bottom:280px" width="20% " padding-left="60px" height="50px" margin-bottom="80px"alt="">
+     <h6 style="font-size: 15px;"><b>Snouters FreshlyBarked Banana & Peanut Butter Treats</b></h6>
+    <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+     <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+      <span class="fa fa-star"></span>
+      <div class="money">
+     <p2><S>₹6767</S></p2><p2 style ="color:#00b3b3;padding-left: 20px;"><u>₹285.00</u></p2> 
+     <p><button class="#00b3b3">ADD TO CART</button></p>
+    </div> 
+
+  </div>
+  <div class="card1">
+ 
+    <img src="Images/12.jpg"  width="70%" height="300px" alt="">
+    <img src="Images/sales.gif" style="margin-bottom:280px" width="20% " padding-left="60px" height="50px" margin-bottom="80px"alt="">
+   <h6 style="font-size: 15px;"><b>Snouters GoodMama Cake Mix (300 gm)</b></h6>
+  <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+   <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <div class="money">
+   <p2><S>₹6767</S></p2><p2 style ="color:#00b3b3;padding-left: 20px;"><u>₹285.00</u></p2>
+   <p><button class="#00b3b3">ADD TO CART</button></p>
+  </div> 
+
+</div>
+<div class="card1">
+ 
+  <img src="Images/13.jpg"  width="70%" height="300px" alt="">
+  <img src="Images/sales.gif"style="margin-bottom:280px" width="20% " padding-left="60px" height="50px" margin-bottom="80px"alt="">
+ <h6 style="font-size: 15px;"><b>Snouters GoodMama Cheese Puffs</b></h6>
+<span class="fa fa-star checked"></span>
+ <span class="fa fa-star checked"></span>
+ <span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <div class="money">
+ <p2><S>₹6767</S></p2><p2 style ="color:#00b3b3;padding-left: 20px;"><u>₹285.00</u></p2> 
+ <p><button class="#00b3b3">ADD TO CART</button></p>
+</div> 
+
+</div>
+<div class="card1">
+ 
+  <img src="Images/14.jpg"  width="70%" height="300px" alt="">
+  <img src="Images/sales.gif"style="margin-bottom:280px" width="20% " padding-left="60px" height="50px" margin-bottom="80px"alt="">
+ <h6 style="font-size: 15px;"><b>Snouters GoodMama Chicken Jerky</b></h6>
+<span class="fa fa-star checked"></span>
+ <span class="fa fa-star checked"></span>
+ <span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  <div class="money">
+ <p2><S>₹6767</S></p2><p2 style ="color:#00b3b3;padding-left: 20px;"><u>₹285.00</u></p2> 
+ <p><button class="#00b3b3">ADD TO CART</button></p>
+</div> 
+
+</div>
+
+</div>
+
+ </div>
+ 
+
+ <div class="form-top" id="formElement1" style="display: none;">
+  <div class="form-1">
+      <form method="" action="" name="reg_form" >    
+          <h2>Log in to your account</h2>    
+          <table>    
+              <tr>    
+                  <td>    
+                      <input type="text" name="UserName" required placeholder="UserName"id="tex" >    
+                  </td>    
+              </tr> 
+              <tr>       
+                  <td>    
+                      <input type="password" name="email" required placeholder="password" id="tex">    
+                  </td>    
+              </tr>   
+              <tr>    
+                  <td>    
+                      <input type="submit" name="submit" value="Login" id="te"><br><br>  
+                      <input type="reset" name="reset" value="Don't have an account?" id="te"><br><br> 
+                      <input type="reset" name="reset" value="Forgot Password"id="te"> 
+                      <button type="button" id="cross1" class="btn cancel" onclick="closeForm()">X</button>   
+                  </td>    
+              </tr>             
+          </table>    
+      </form>  
+  </div>
+  <div class="form-2">
+      <img src="images/singnup.jpg" width="300px"height="400px" alt="">
+  </div>
+</div>
+
+
+
+<div class="form-top1" id="formElement" style="display: none;">
+<div class="form-1">
+    <form method="" action="" name="reg_form" >    
+        <h2>Create an account</h2>    
+        <table>    
+            <tr>    
+                <td>    
+                    <input type="text" name="UserName" required placeholder="UserName" id="tex">    
+                </td>    
+            </tr> 
+            <tr>      
+                <td>    
+                    <input type="Email" size="50" required name="address" placeholder="Email" id="tex">    
+                </td>    
+            </tr>    
+            <tr>       
+                <td>    
+                    <input type="password" name="email" required placeholder="password" id="tex">    
+                </td>    
+            </tr>   
+            <tr>
+                <td>    
+                    <input type="password" name="email" required placeholder="Retype password" id="tex">    
+                </td>
+            </tr> 
+            <tr>    
+                <td>    
+                    <input type="number" required name="mobile" placeholder="phone" id="tex">    
+                </td>    
+            </tr>  
+            <tr>
+                <td>
+                    <input type="radio">
+                    I only want to book
+                </td>
+            </tr>   
+            <tr>
+                <td>
+                    <input type="radio">
+                    I want to be a Host
+                </td>
+            </tr>   
+            <tr>
+                <td>
+                    <input type="checkbox">
+                    I agree with <a href="#">terms & conditions</a>
+                </td>
+            </tr>
+            <tr>    
+                <td>    
+                    <input type="submit" name="submit" value="Create acount" id="te"><br><br>   
+                    <button type="button" id="cross" class="btn cancel" onclick="closeForm1()">X</button>   
+                </td>    
+            </tr> 
+            <tr>
+                <td>
+                    <a href="#">Already a member? Log in</a>
+                </td>
+            </tr>  
+                     
+        </table>    
+    </form>  
+</div>
+<div class="form-2">
+    <img src="images/singnup.jpg" width="300px"height="400px" alt="">
+</div>
+</div>
+<script>
+    function reactiveTopNav() {
+        const topNav = document.getElementById("myTopnav");
+
+        topNav.classList.contains("responsive")
+            ? topNav.classList.remove("responsive")
+            : topNav.classList.add("responsive");
+    }
+    window.onscroll = function () {
+        stickyTopNav();
+    };
+
+    var navbar = document.getElementById("myTopnav");
+    var sticky = navbar.offsetTop;
+
+    function stickyTopNav() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+
+    function showForm1() {
+        document.getElementById('formElement1').style.display = 'block';
+    }
+    function closeForm(){
+            document.getElementById("formElement1").style.display="none";
+        }
+
+
+        function showForm() {
+        document.getElementById('formElement').style.display = 'block';
+    }
+    function closeForm1(){
+            document.getElementById("formElement").style.display="none";
+        }
+</script>
+</body>
+</html>
